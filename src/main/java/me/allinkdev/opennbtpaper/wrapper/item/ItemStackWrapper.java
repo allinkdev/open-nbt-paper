@@ -6,7 +6,7 @@ import com.github.steveice10.opennbt.tag.builtin.StringTag;
 import me.allinkdev.opennbtpaper.wrapper.tag.NoConstructor;
 import me.allinkdev.opennbtpaper.wrapper.tag.collection.CompoundTagConverter;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_19_R2.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_17_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 
 public class ItemStackWrapper extends NoConstructor {
@@ -25,7 +25,7 @@ public class ItemStackWrapper extends NoConstructor {
 		}
 
 		final Material itemMaterial = itemStack.getType();
-		final String itemName = itemMaterial.key().asString();
+		final String itemName = itemMaterial.getKey().asString();
 		final StringTag idTag = new StringTag("id", itemName);
 		itemTag.put(idTag);
 

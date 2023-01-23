@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "me.allinkdev"
-version = "1.19.3+0.0.1"
+version = "1.17.1+0.0.1"
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     api("com.github.steveice10:opennbt:1.5-SNAPSHOT")
-    paperDevBundle("1.19.3-R0.1-SNAPSHOT")
+    paperDevBundle("1.17.1-R0.1-SNAPSHOT")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
